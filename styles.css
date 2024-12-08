@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif; /* Classic old-book serif font */
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6e3; /* Aged parchment background */
+    color: #3a2c1a; /* Dark brown for text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Content Box */
+.content {
+    max-width: 800px; /* Optimal reading width for desktop */
+    margin: 30px;
+    padding: 25px;
+    background: #fffdf5; /* Slightly lighter parchment */
+    border-radius: 8px; /* Rounded corners for a soft look */
+    border: 1px solid #d3c7b7; /* Subtle border for elegance */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Gentle shadow for depth */
+}
+
+/* Book Cover */
+.book-cover {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto; /* Center the image and add spacing */
+    border: 1px solid #d3c7b7; /* Match border style to content box */
+    border-radius: 8px; /* Soft rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.4em; /* Large heading for desktop */
+    font-weight: bold;
+    color: #3c2f23; /* Darker tone for headings */
+    text-shadow: 1px 1px 2px #d6cfc4; /* Gentle text shadow */
+    letter-spacing: 2px; /* Slightly spaced letters for elegance */
+}
+
+h2 {
+    margin-top: 30px;
+    border-bottom: 2px solid #3c2f23; /* Decorative underline */
+    padding-bottom: 5px;
+    font-size: 1.8em; /* Subheading size */
+    color: #3c2f23;
+    font-style: italic; /* Elegant style for subheadings */
+}
+
+/* Paragraphs */
+p {
+    margin: 20px 0;
+    text-align: justify; /* Mimic book text alignment */
+    font-size: 1.1em;
+    color: #4a3b2e;
+}
+
+/* Blockquotes */
+blockquote {
+    font-style: italic;
+    color: #5a4b3c;
+    margin: 25px 40px;
+    padding-left: 20px;
+    border-left: 4px solid #3c2f23; /* Decorative border */
+    background-color: #f6efe0; /* Subtle background contrast */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #5a4b3c;
+    border-top: 1px solid #d3c7b7;
+    width: 100%;
+    background-color: #fdf6e3;
+}
+
+a {
+    color: #8b4513; /* Rich sienna for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #6a3410; /* Darker sienna on hover */
+}
+
+/* Responsive Styles */
+
+/* Medium Devices (Tablets) */
+@media (max-width: 1024px) {
+    .content {
+        max-width: 90%; /* Adjust content width for smaller screens */
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em; /* Slightly smaller for tablet screens */
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 1em; /* Adjust text size for readability */
+    }
+
+    .book-cover {
+        max-width: 90%; /* Scale down for smaller screens */
+    }
+}
+
+/* Small Devices (Mobile) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Add spacing around the edges */
+    }
+
+    .content {
+        max-width: 100%; /* Full width for mobile */
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em; /* Adjust heading size for mobile */
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    blockquote {
+        margin: 15px 20px; /* Reduce padding for smaller screens */
+        padding-left: 15px;
+    }
+
+    footer {
+        font-size: 0.8em; /* Smaller footer text for mobile */
+    }
+
+    .book-cover {
+        max-width: 100%; /* Full width for mobile */
+    }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
+
+    blockquote {
+        margin: 10px 15px;
+        padding-left: 10px;
+    }
+
+    footer {
+        font-size: 0.75em;
+    }
+
+    .book-cover {
+        max-width: 100%; /* Ensure it fits small screens */
+    }
+}
