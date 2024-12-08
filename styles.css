@@ -53,6 +53,11 @@ h2 {
     font-style: italic; /* Elegant style for subheadings */
 }
 
+/* Subtitle */
+.subtitle {
+    text-align: center; /* Center the subtitle text */
+}
+
 /* Paragraphs */
 p {
     margin: 20px 0;
